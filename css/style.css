@@ -1,0 +1,369 @@
+/* style.css */
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #5e6282;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h4 {
+    font-family: 'Volkhov', serif;
+    color: #181e4b;
+  }
+  
+  h5 {
+    font-size: 0.9rem;
+    color: #df6951;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #181e4b;
+  }
+  
+  .navbar nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar nav ul li a {
+    font-weight: 500;
+    color: #5e6282;
+  }
+  
+  .signup {
+    background: #f1a501;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background: #fefcfb;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    margin-bottom: 2rem;
+    max-width: 90%;
+    font-size: 1rem;
+  }
+  
+  .hero-buttons button {
+    margin-right: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  
+  .btn-primary {
+    background-color: #f1a501;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: #686d77;
+    border: 1px solid #ccc;
+  }
+  
+  .hero-image img {
+    max-width: 450px;
+    height: auto;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px;
+  }
+  
+  .hero-image {
+    position: relative;
+    width: 500px;
+  }
+  
+  .decor-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .traveler-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  /* Services Section */
+  .services {
+    padding: 4rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    width: 200px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .service-card.highlighted {
+    border-top: 3px solid #f1a501;
+  }
+  
+  /* Destinations Section */
+  .destinations {
+    padding: 4rem;
+    text-align: center;
+  }
+  
+  .destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    width: 250px;
+    text-align: left;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    padding: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Steps Section */
+  .steps {
+    padding: 4rem;
+    background: #fffaf1;
+    text-align: center;
+  }
+  
+  .steps h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .steps ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #5e6282;
+  }
+  
+  .trip-card {
+    background: #fff;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 4rem;
+    background: #fefcfb;
+    text-align: center;
+  }
+  
+  .testimonial {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  /* Newsletter Section */
+  .newsletter {
+    padding: 4rem;
+    text-align: center;
+    background: #fef2e4;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+    width: 250px;
+  }
+  
+  .newsletter button {
+    padding: 0.8rem 1.2rem;
+    background: #f1a501;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  
+  /*partners*/
+  .partners {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container img {
+    max-height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  
+  .logo-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+  
+  .center-logo {
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center-logo img {
+    filter: none;
+    max-height: 40px;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 3rem 4rem;
+    background: #fff;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #181e4b;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 0.8rem;
+    color: #181e4b;
+    font-size: 1rem;
+  }
+  
+  .footer-links a {
+    display: block;
+    color: #5e6282;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  footer p {
+    font-size: 0.85rem;
+    color: #a5a5a5;
+  }
